@@ -24,7 +24,7 @@ gcc -shared -fPIC -o libhoyonetfix.so hoyonetfix.c -ldl
 
 Preload the library when launching the game:
 ```bash
-LD_PRELOAD=/path/to/libhoyonetfix.so wine game.exe
+LD_PRELOAD=/path/to/libhoyonetfix.so wine GenshinImpact.exe
 ```
 
 ## Compatibility
@@ -43,10 +43,10 @@ You can set the network blocking duration (in seconds) using the `HOYO_TIMEOUT` 
 
 ```bash
 # With custom timeout (15 seconds):
-HOYO_TIMEOUT=15 LD_PRELOAD=/path/to/libhoyonetfix.so wine game.exe
+HOYO_TIMEOUT=15 LD_PRELOAD=/path/to/libhoyonetfix.so wine GenshinImpact.exe
 
 # With default 10 second timeout:
-LD_PRELOAD=/path/to/libhoyonetfix.so wine game.exe
+LD_PRELOAD=/path/to/libhoyonetfix.so wine GenshinImpact.exe
 ```
 
 ## How It Works
