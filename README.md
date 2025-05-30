@@ -32,7 +32,7 @@ LD_PRELOAD=/path/to/libhoyonetfix.so wine GenshinImpact.exe
 **Note on Proton compatibility**:  
 This fix does not work with Steam Proton and GE-Proton because `steam.exe` inside the prefix requires internet access during launch. Instead, use either:
 - Direct launch with Wine (with Lutris, .sh and etc)
-- [UMU Proton](https://github.com/Open-Wine-Components/umu-launcher) inside steam
+- [UMU Proton](https://github.com/Open-Wine-Components/umu-proton) inside steam
 
 **Steam Deck verification**:  
 The fix has been tested and confirmed working on Steam Deck using UMU Proton.
