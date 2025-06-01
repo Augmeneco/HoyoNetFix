@@ -25,6 +25,7 @@ __attribute__((constructor))
 static void init() {
     gettimeofday(&start_time, NULL);
     initialized = true;
+    fprintf(stderr, "libhoyonetfix: Library loaded successfully\n");
 
     // Read HOYO_TIMEOUT environment variable
     const char* env_timeout = getenv("HOYO_TIMEOUT");
@@ -35,7 +36,7 @@ static void init() {
         if (endptr != env_timeout && *endptr == '\0' && value > 0) {
             blocking_duration = value;
         } else {
-            fprintf(stderr, "libnetblock: Invalid HOYO_TIMEOUT value. Using default %ld seconds\n", blocking_duration);
+            fprintf(stderr, "libhoyonetfix: Invalid HOYO_TIMEOUT value. Using default %ld seconds\n", blocking_duration);
         }
     }
 }
